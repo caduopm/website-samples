@@ -1,0 +1,39 @@
+body{
+	width: 95%;
+	max-width: 800px;
+	margin: auto;/*centralisa o elemnto*/
+	background: url(../img/fundo.jpg) center;
+	font-family: sans-serif; 
+	line-height: 1.5; /*altura entre as linhas*/
+	color: #ffffff;
+}
+main{
+	background: #00000060;
+	padding: 5px 40px;
+	margin: 20px;
+	border-radius: 10px;
+}
+/*.logo{
+	text-align: center;
+}
+.band-name{
+	text-align: center;
+}
+.head-line{
+	text-align: center; 
+}*/
+.logo, .band-name, .head-line{
+	margin: 0;
+	text-align: center;
+}
+.shows{
+	margin: 30px 0;
+	text-align: center;
+	width: 100%;
+}
+.shows table{
+	background: #ce554c91;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 0 auto;
+}
