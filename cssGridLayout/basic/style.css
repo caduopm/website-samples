@@ -1,0 +1,70 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.site {
+    height: 100vh;
+    display: grid;
+
+    /* se quizer alinhar as divs ao centro use esse codigo */
+    /* alinha verticalmente */
+    /* align-items: center;  */
+    /* alinha horizontalmente */
+    /* justify-items: center; */
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 991px) {
+    .site {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px auto auto auto 20px;
+        grid-template-areas: 
+        "title"
+        "header"
+        "main"
+        "sidebar"
+        "footer";
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 992px) {
+    .site {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto 1fr 3fr;
+        grid-template-areas: 
+        "title title title"
+        "main header header"
+        "main sidebar footer";
+    }
+} 
+
+.musthead {
+    grid-area: header;
+    background-color: green;
+}
+
+.page-title {
+    grid-area: title;
+    background-color: red;
+}
+
+.main-content {
+    grid-area: main;
+    background-color: blue;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: gray;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(156, 236, 102);
+}
+
